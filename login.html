@@ -1,0 +1,86 @@
+<HTML>
+    <HEAD>
+     <script src="login.js"></script>
+    <TITLE>
+    Employee Login
+    </TITLE>
+    <style>   
+    Body {  
+      font-family: Calibri, Helvetica, sans-serif;  
+      background-color: white;  
+    }  
+
+
+    button {   
+           background-color: #4c54af;   
+           width: 100%;  
+            color: white;   
+            padding: 15px;   
+            margin: 10px 0px;   
+            border: none;   
+            cursor: pointer;   
+             }   
+     form {   
+            border: 3px solid #f1f1f1;   
+        }   
+     input[type=text], input[type=password] {   
+            width: 100%;   
+            margin: 8px 0;  
+            padding: 12px 20px;   
+            display: inline-block;   
+            border: 2px solid #af594c;;   
+            box-sizing: border-box;   
+        }  
+     button:hover {   
+            opacity: 0.7;   
+        } .buttons {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;}
+    
+        .action_btn {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;}  
+      .cancelbtn {   
+            width: auto;   
+            padding: 10px 18px;  
+            margin: 10px 5px;  
+        }   
+            
+         
+     .container {   
+        width: 20em;
+            padding: 17px;   
+            background-color: white;  
+        } 
+        .btn-cls {
+            margin-left: 3px;
+        }  
+    </style>   
+    </HEAD>
+    <BODY background>
+    <div style:"align:center">
+    <center><h1>Employee Login</h1></center>
+    </div>
+    <div class="container">
+    <label>User name</label>
+    <input type="text" placeholder="Username" id="userName">
+    <label>Password</label>
+    <input type="password" placeholder="Password" id="pass">
+    <!-- <div class="buttons-wrap"> -->
+    
+                <div class="action_btn">
+                    <button name="cancel" class="btn-cls" type="submit" value="Cancel" onclick="cancel()">Cancel</button>
+
+                <button name="submit" class="btn-cls" type="submit" value="Save" onclick="login()">Save</button>
+    
+                <p id="saved"></p>
+    
+                </div>
+    
+            <!-- </div> -->
+    Register <a href ="login.html"> New User? </a>  <a href ="indexReg.html"> please register? </a>   
+    </div>
+    </BODY>
+    </HTML>
